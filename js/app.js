@@ -53,8 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let nombre = 20;
     console.log(nombre);
     //calculer l'année de naissance
-    nombre % 2 == 0 ? console.log("chiffre paire " + nombre) : console.log("chiffre impaire " + nombre);
+    nombre % 2 == 0 ? console.log(`chiffre paire ${nombre}`) : console.log(`chiffre impaire ${nombre}`);
     let annee = 2020;
     let ages = 53;
-    console.log("Vous êtes né(e) " + annee - ages);
+    console.log(`Vous êtes né(e) ${annee - ages}`);
+
+    /* exemple dynamique */
 });
