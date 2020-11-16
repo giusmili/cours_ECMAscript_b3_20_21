@@ -44,7 +44,7 @@ Nota bene : pour installer le CLI faire d'abord **npm init** pour le package.jso
    console.log(nombre)
 
    //calculer l'année de naissance
-   nombre%2 == 0 ? console.log(`chiffre paire ${nombre}`) :        console.log(`chiffre impaire ${nombre}`)
+   nombre%2 == 0 ? console.log(`chiffre paire ${nombre}`) : console.log(`chiffre impaire ${nombre}`)
    //condition ternaire
    let annee = 2020
    let ages = 53
