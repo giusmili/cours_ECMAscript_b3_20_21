@@ -35,7 +35,7 @@ Nota bene : pour installer le CLI faire d'abord **npm init** pour le package.jso
     % modulo
     */
 ```
-## Exemple js
+## Exemple js. Opérateurs utilisés:  _=, ==, - and %_
 ```js
     let nombres = 10;
    console.log(nombres%2) //résultat
