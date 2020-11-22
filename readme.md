@@ -50,3 +50,71 @@ Nota bene : pour installer le CLI faire d'abord **npm init** pour le package.jso
    let ages = 53
    console.log(`Vous êtes né(e) ${annee - ages}`)
 ```
+---
+## Les tableaux
+* Tableaux de base
+* Concept de tableaux d'objet
+* Tableaux multidimensionnels
+
+## Exemple en code:
+
+```js
+    let lang = ["html", "css", 2020] //array base
+
+    let ensemble = [...lang,...dates] //spread operator
+
+    ensemble.push(x)//add table element
+    console.table(ensemble) // print out
+
+    // iteration init, condition and test
+
+     let put_print = String("") //ref variable in for
+    for(i = 0; i < ensemble.length; i++){ 
+        console.log(`${i} : ${ensemble[i]}`)
+        //elements.innerHTML+=`<li>${ensemble[i]}</li>`
+        put_print += `<li>${ensemble[i]}</li>`
+    }
+    elements.innerHTML=put_print 
+  
+   
+
+    //while method
+    let compt = 0
+        while(compt < ensemble.length){
+           
+            console.log(ensemble[compt])
+            compt ++
+           
+        }
+
+    //foreach method
+    ensemble.forEach((cle, valeur) =>{
+        console.log(valeur+" "+cle )
+    })
+
+    //array x,y
+    const persons =[
+            {
+                nom : "Berner Lee",
+                prenom : "Tim"
+            },
+            {
+                nom : "Each",
+                prenom: "Branden"
+            }
+        ]
+    console.table(persons[1].prenom)
+    
+    for(i = 0; i < persons.length; i++){
+        console.log(`${persons[i].nom} ${persons[i].prenom}`)
+    }
+    persons.forEach((cle) =>{
+        console.log(cle.nom+' '+cle.prenom)
+    })
+
+    for(let key in persons){
+        console.log(key+' '+persons[key].nom)
+    }
+
+})
+```
