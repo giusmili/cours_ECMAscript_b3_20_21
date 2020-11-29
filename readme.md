@@ -118,3 +118,6 @@ Nota bene : pour installer le CLI faire d'abord **npm init** pour le package.jso
 
 })
 ```
+## Utilisation logique des vh vw
+* VH : 1/100e de la hauteur du viewport
+* VW : 1/100e de la largeur du viewport
