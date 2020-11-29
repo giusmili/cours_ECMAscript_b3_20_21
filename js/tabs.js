@@ -17,13 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
     let i;
     let elements = document.querySelector("ul");
 
-    let put_print = String("");
+    let put_print = String(""); //variable de référence
+
     for (i = 0; i < ensemble.length; i++) {
         //méthode for
         console.log(`${i} : ${ensemble[i]}`);
         //elements.innerHTML+=`<li>${ensemble[i]}</li>`
         put_print += `<li>${ensemble[i]}</li>`;
     }
+
     elements.innerHTML = put_print; //variable de référence
 
 

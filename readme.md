@@ -68,7 +68,7 @@ Nota bene : pour installer le CLI faire d'abord **npm init** pour le package.jso
 
     // iteration init, condition and test
 
-     let put_print = String("") //ref variable in for
+    let put_print = String("") //ref variable in for
     for(i = 0; i < ensemble.length; i++){ 
         console.log(`${i} : ${ensemble[i]}`)
         //elements.innerHTML+=`<li>${ensemble[i]}</li>`

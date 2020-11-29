@@ -1,5 +1,9 @@
+html{
+	font-size: 62.5%;
+}
+
 body{
-	font: 16px sans-serif;
+	font: 1.6rem sans-serif;
 }
 h1,h2,h3{
 	text-align: center;
@@ -10,4 +14,61 @@ header  h1 > code{
 	background-color: #ccc;
 	border: solid 1px #222;
 	display: inline-block;
+}
+/* table style */
+.table{
+	max-width: 90rem;
+	margin:0 auto;
+	padding: .5rem;
+}
+ .table table{
+	width: 100%;
+	border: solid .1rem #ccc;
+	line-height: 4.5rem;
+	border-spacing: 0; /* annuler l'espacement */
+	background-color: #fafafa;
+	 
+ }
+ /* les lignes du tableau */
+ table, tr, th, td{
+	 border: solid .1rem #ccc;
+	 border-collapse: collapse;/* pour des lignes fines */
+	 padding: 0.5rem;
+
+ }
+ 
+
+ table thead th:nth-of-type(1){
+	width: 20%;
+ }
+ /* les couleur de thead et tfoot*/
+ table thead th,  table tfoot th{
+	 font-weight: 100;
+	 color: #fff;
+	 text-transform: capitalize;
+ }
+ table thead{
+	 background-color: #c0392b;
+ }
+ table tfoot{
+	background-color: #27ae60;
+}
+tbody tr:nth-child(2n + 1){
+	background-color: #dfe6e9;
+}
+
+/* survole de la souris pour les lignes */
+
+tbody tr{
+	transition: all 300ms ease-in-out;
+}
+tbody tr:hover{
+	background-color: rgb(9,89, 154);
+	color: #fff;
+	cursor: pointer;
+}
+
+footer p{
+	text-align: center;
+	padding: 1rem;
 }
